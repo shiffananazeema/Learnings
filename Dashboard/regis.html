@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Registration Form</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+<link href="signin.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  
+    <script src="tq.js"></script>
+
+</head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form>
+    <img class="mb-4" src="t2.png" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Register</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="name"  placeholder="name@example.com" required>
+      <label for="floatingInput" >Name</label>
+    </div>
+    <div class="form-floating">
+      <input type="text" minlength="10" maxlength="10" class="form-control" id="number" placeholder="Phone Number" required>
+      <label for="floatingInput">Phone Number</label>
+    </div>
+    <div class="form-floating">
+        <input type="email" class="form-control" id="email" placeholder="Email" required>
+        <label for="floatingInput">Email</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" maxlength="10" class="form-control" id="password" placeholder="Password" required>
+        <label for="floatingPassword">Password</label>
+      </div>
+    <button class="w-100 btn btn-lg btn-primary" type="button" id="submit" onclick="store()">Register</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form>
+</main>    
+  </body>
+</html>

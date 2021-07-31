@@ -1,0 +1,5 @@
+
+console.clear()
+console.log('test..')
+var x = localStorage.getItem("name");
+document.getElementById("username").innerHTML = "Welcome to Sagar Online Shopping, "+x;
