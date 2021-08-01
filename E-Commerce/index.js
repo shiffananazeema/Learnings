@@ -1,4 +1,3 @@
-      
 
 function store(){
 
@@ -74,3 +73,30 @@ function store(){
         }
         }
  
+    function out(){
+        localStorage.clear();
+        location.href = "index.html";
+    }
+
+    function stay(){
+        location.href = "index.html";
+    }
+
+
+    function sname(){
+
+        var ename = document.getElementById('editname');
+        if(ename.value.length == 0)   
+        {
+        return 1;
+        }
+        
+        else
+        {    
+        localStorage.setItem('name',ename.value);
+        location.href = "index.html";
+        }
+        }
+    
+    
+    

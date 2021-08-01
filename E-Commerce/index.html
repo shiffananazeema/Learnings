@@ -71,15 +71,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="fa fa-truck" aria-hidden="true"></span>Track Order</a>
 					</li>
 					<li>
-						<span class="fa fa-phone" aria-hidden="true"></span> 001 234 5678
+						<span class="fa fa-phone" aria-hidden="true"></span> 234 5678
 					</li>
-					<li>
+					<li class="signupLi">
+						<a href="#"  data-toggle="modal" data-target="#myModal2">
+							<span class="fa fa-pencil-square-o"  aria-hidden="true"></span> Sign Up </a>
+					</li>
+					<li class="editMenu">
+						<a href="#" data-toggle="modal" data-target="#myModal4">
+							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Edit Profile </a>
+					</li>
+					<li class="signupLi">
 						<a href="#" data-toggle="modal" data-target="#myModal1">
-							<span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+							<span class="fa fa-unlock-alt"  aria-hidden="true"></span> Sign In </a>
 					</li>
-					<li>
-						<a href="#" data-toggle="modal" data-target="#myModal2">
-							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
+					<li class="editMenu">
+						<a href="#" data-toggle="modal" data-target="#myModal3">
+							<span class="fa fa-lock" aria-hidden="true"></span> Log Out </a>
 					</li>
 				</ul>
 				<!-- //header lists -->
@@ -99,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<form action="#" method="post" class="last">
 							<input type="hidden" name="cmd" value="_cart">
 							<input type="hidden" name="display" value="1">
-							<button class="w3view-cart" type="submit" name="submit" value="">
+							<button class="w3view-	cart" type="submit" name="submit" value="">
 								<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
 							</button>
 						</form>
@@ -189,7 +197,61 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- //Modal2 -->
+	<div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body modal-body-sub_agile">
+					<div class="main-mailposi">
+						<span class="fa fa-envelope-o" aria-hidden="true"></span>
+					</div>
+					<div class="modal_body_left modal_body_left1">
+						<h3 class="agileinfo_sign">Edit Profile</h3>
+						<p>
+							Let's Edit your Profile
+						</p>
+						<form >
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" id="editname" placeholder="Name">
+							</div>
+							<button class="button2" onclick="sname()">Save</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- //Modal content-->
+		</div>
+	</div>
 	<!-- //signup Model -->
+	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body modal-body-sub_agile">
+					<div class="main-mailposi">
+						<span class="fa fa-envelope-o" aria-hidden="true"></span>
+					</div>
+					<div class="modal_body_left modal_body_left1">
+						<h3 class="agileinfo_sign">Log Out</h3>
+						<p>
+							Are you sure you want to logout? 
+						</p>
+						<form >
+							<button class="button2" type="button" id="logout" onclick="out()">Yes</button>
+							<button class="button2" type="button" id="logout" onclick="stay()">No</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- //Modal content-->
+		</div>
+	</div>
 	<!-- //header-bot -->
 	<!-- navigation -->
 	<div class="ban-top">
