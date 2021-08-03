@@ -1,48 +1,40 @@
 
-function store(){
+$(document).ready(function(){
+    $("#store").click(function(event){
+        event.preventDefault();
 
-    var name = document.getElementById('name');
-    var number = document.getElementById('number');
-    var email = document.getElementById('email');
-    var password = document.getElementById('password');
-    var mail = /@/g;
+    var name = $('#name').val();
+    var number = $('#number').val();
+    var email = $('#email').val();
+    var password = $('#password').val();
   
-    if(name.value.length == 0)   
+    if(name == "")   
     {
     swal("Error","Please Enter Your Name","warning");
     }
     
-    else if(number.value.length == 0)
+    else if(number == "")
     {
         swal("Error","Please Enter Your Number","warning");
     }
     
-    else if(number.value.length != 10)
-    {
-        swal("Error","Please Enter Valid Number","warning");
-    }
-    
-    else if(email.value.length == 0)
+    else if(email == "")
     {
         swal("Error","Please Enter Your Email","warning");
     }
-    
-    else if(!email.value.match(mail))
-    {
-        swal("Error","Please Enter Valid Mail Id","warning");
-    }
 
-    else if(password.value.length == 0)
+
+    else if(password == "")
     {
         swal("Error","Please Enter Password","warning");
     }
 
     else
     {    
-    localStorage.setItem('name',name.value);
-    localStorage.setItem('number',number.value);
-    localStorage.setItem('email',email.value);
-    localStorage.setItem('password',password.value);
+    localStorage.setItem('name',name);
+    localStorage.setItem('number',number);
+    localStorage.setItem('email',email);
+    localStorage.setItem('password',password);
     swal({
         title: "Good Job",
         text: "You are now a Member of Sagar Shopping",
@@ -52,51 +44,58 @@ function store(){
         window.location = "index.html";
     })
     }
-    } 
+    });
+}); 
 
     
+    $(document).ready(function(){
+        $("#check").click(function(){
+            var susername = localStorage.getItem('name');
+            var spassword = localStorage.getItem('password');
+
+            var user = $('#username').val();
+            var pass = $('#passn').val();
+
+            if(user == susername && pass == spassword)
+            {
+                location.href = "index.html";
+            }
+            else{
+                swal("Error","Invalid username or password!","warning");
+            }
+        });
+    });
+
+
+        $(document).ready(function(){
+            $("#out").click(function(){
+                localStorage.clear();
+                location.href = "index.html";
+            });
+        });
     
-    function check(){
-        var susername = localStorage.getItem('name');
-        var spassword = localStorage.getItem('password');
-        
-        var user = document.getElementById('username');
-        var pass = document.getElementById('passn');
-        
-        if(user.value == susername && pass.value == spassword)
-        {
+    $(document).ready(function(){
+        $("#stay").click(function(){
             location.href = "index.html";
-        }
-        else
-        { 
-            swal("Error","Invalid username or password!","warning");
-        }
-        }
- 
-    function out(){
-        localStorage.clear();
-        location.href = "index.html";
-    }
+        });
+    });
 
-    function stay(){
-        location.href = "index.html";
-    }
-
-
-    function sname(){
-
-        var ename = document.getElementById('editname');
-        if(ename.value.length == 0)   
+$(document).ready(function(){
+    $("#edit").click(function(){
+        $('#editname').val(localStorage.getItem('name'));
+    });
+    $("#save").click(function(){
+        var ename = $('#editname').val();
+        if(ename == "")
         {
-        return 1;
+            return 1;
         }
-        
-        else
-        {    
-        localStorage.setItem('name',ename.value);
-        location.href = "index.html";
+        else{
+
+        localStorage.setItem('name',ename);
+       location.href = "index.html";
         }
-        }
-    
-    
+    });
+});
+
     

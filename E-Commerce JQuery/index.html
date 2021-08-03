@@ -24,7 +24,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		}
 	</script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
 <!--//tags -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -78,7 +77,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="fa fa-pencil-square-o"  aria-hidden="true"></span> Sign Up </a>
 					</li>
 					<li class="editMenu">
-						<a href="#" data-toggle="modal" data-target="#myModal4">
+						<a href="#" id="edit" data-toggle="modal" data-target="#myModal4">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Edit Profile </a>
 					</li>
 					<li class="signupLi">
@@ -146,7 +145,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="styled-input">
 								<input type="password" placeholder="Password" id="passn" >
 							</div>
-							<button class="button2" type="button" onclick="check()">Sign In</button>
+							<button class="button2" type="button" id="check">Sign In</button>
 						</form>
 					</div>
 					<div class="clearfix"></div>
@@ -188,7 +187,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="styled-input">
 								<input type="password" id="password" placeholder="Password">
 							</div>
-							<button class="button2" type="button" id="submit" onclick="store()">Sign Up</button>
+							<button class="button2"  id="store">Sign Up</button>
 						</form>
 					</div>
 				</div>
@@ -215,9 +214,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</p>
 						<form >
 							<div class="styled-input agile-styled-input-top">
-								<input type="text" id="editname" placeholder="Name">
+								<input type="text" id="editname">
 							</div>
-							<button class="button2" onclick="sname()">Save</button>
+							<button class="button2" id="save">Save</button>
 						</form>
 					</div>
 				</div>
@@ -243,8 +242,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							Are you sure you want to logout? 
 						</p>
 						<form >
-							<button class="button2" type="button" id="logout" onclick="out()">Yes</button>
-							<button class="button2" type="button" id="logout" onclick="stay()">No</button>
+							<button class="button2" type="button" id="out">Yes</button>
+							<button class="button2" type="button" id="stay">No</button>
 						</form>
 					</div>
 				</div>
