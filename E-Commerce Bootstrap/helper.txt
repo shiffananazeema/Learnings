@@ -1,0 +1,11 @@
+ihjdskl
+afte login
+create a storage as login_status
+and set value as yes 
+after log out 
+change no
+
+
+check
+1.on login page check if login is yes
+then redirect to index.html

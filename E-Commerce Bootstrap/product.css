@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  max-width: 960px;
+}
+.header{
+  background: radial-gradient(#fff,#96e2fc);
+}
+
+.btn{
+  background: #ff523b;
+  color: #fff;
+}
+.btn:hover{
+  background: #40bbb5;
+}
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 25px;
+}
+.accountpage{
+  padding: -50px 0;
+}
+.form-container{
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.form-container span{
+  font-weight: bold;
+  padding: 0 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+.formbtn{
+  display: inline-block;
+}
+.form-container form{
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 0.40s;
+}
+form input{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+form .btn{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+form .btn:focus{
+outline: none;
+}
+form a{
+  font-size: 12px;
+}
+#indicator{
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: transform 0.40s;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+ .navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+a{
+  text-decoration: none;
+  color: #555;
+}
+p{
+  color: #555;
+}
+
+.add .btn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.offer{
+  background: radial-gradient(#fff,#96e2fc);
+  margin-top: 80px;
+  padding: 30px 0;
+}
+.col-2 .offer-img{
+  padding: 50px;
+}
+small{
+    color: #555;
+}
+.col-2{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img{
+  max-width: 100%;
+  padding: 50px 50px;
+}
+.col-2 h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.col-2 p{
+  font-size: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.title{
+  text-align: center;
+  margin: 30px auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: rgb(39, 39, 39);
+}
+.title::after{
+  content: '';
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+} 
+
+.form-container{
+  background: #fff;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.form-container span{
+  font-weight: bold;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 100%;
+  display: inline-block;
+}
+
+.form-container form{
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 85px;
+  transition: transform 0.40s;
+}
+.form input{
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+.form .btn{
+  width: 20%;
+}
+
+
+.product{
+  margin-top: 80px;
+}
+.product .col-2 img{
+  padding: 0;
+}
+.product .col-2{
+  padding: 0px;
+}
+.product .col-2 .rating{
+  padding: -50px;
+}
+.product h4{
+  font-size: 22px;
+  font-weight: normal;
+}
+.product p{
+  padding: 10px;
+  font-size: 15px;
+}
+hr{
+  margin: 30px;
+  padding: 10px;
+}
+.small-img-row{
+  display: flex;
+  justify-content: space-between;
+}
+.smallimg{
+  height: 30%;
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
